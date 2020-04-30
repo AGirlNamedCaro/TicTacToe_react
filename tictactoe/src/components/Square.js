@@ -1,9 +1,11 @@
-import React from "react";
-export default function Square() {
-  
+import React, {useState} from "react";
+
+export default function Square(props) {
+    const [state,setState] = useState('')
     return (
-      <button className="square">
-        {/* TODO */}
+      <button className="square" 
+      onClick={() => setState({value: 'X'})}>
+        {state.value}
       </button>
     );
   

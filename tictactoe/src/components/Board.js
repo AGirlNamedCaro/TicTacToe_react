@@ -4,7 +4,7 @@ import { render } from 'react-dom';
 
 export default function Board() {
    const renderSquare = (i) => {
-    return <Square  />;
+    return <Square value={i}  />;
   }
 
   
